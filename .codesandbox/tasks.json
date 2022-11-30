@@ -1,0 +1,16 @@
+{
+  "$schema": "https://codesandbox.io/schemas/tasks.json",
+  "setupTasks": ["yarn install", "yarn build"],
+  "tasks": {
+    "start-backend": {
+      "name": "Run Backend ExpressJs Server",
+      "command": "cd backend/src/ && npm start",
+      "runAtStart": false
+    },
+    "start-frontend": {
+      "name": "Run FrontEnd Astro Server",
+      "command": "cd frontend && npm run dev",
+      "runAtStart": false
+    }
+  }
+}
