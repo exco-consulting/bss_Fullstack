@@ -4,12 +4,12 @@
   "tasks": {
     "start-backend": {
       "name": "Run Backend ExpressJs Server",
-      "command": "cd backend/src/ && npm start",
+      "command": "cd backend/src/ && npm install && npm start",
       "runAtStart": false
     },
     "start-frontend": {
       "name": "Run FrontEnd Astro Server",
-      "command": "cd frontend && npm run dev",
+      "command": "cd frontend && npm install && npm run dev",
       "runAtStart": false
     }
   }
