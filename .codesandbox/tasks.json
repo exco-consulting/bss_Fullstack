@@ -11,6 +11,11 @@
       "name": "Run FrontEnd Astro Server",
       "command": "cd frontend && npm install && npm run dev",
       "runAtStart": false
+    },
+    "start-apigateway": {
+      "name": "Run API Gateway Server",
+      "command": "cd api-gateway && cd bss-api-gateway && npm start",
+      "runAtStart": false
     }
   }
 }
