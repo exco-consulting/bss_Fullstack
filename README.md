@@ -1,10 +1,17 @@
-# Node.js template
+# BSS Fullstack template
 
-This is a Node.js project.
+This is a template repository that uses best-in-class framework for FrontEnd and Backend components to speedup full Stack web application development
 
-Add your [configuration](https://codesandbox.io/docs/projects/learn/setting-up/tasks) to optimize it for [CodeSandbox](https://codesandbox.io/p/dashboard).
+As Front-End framework it has been selected
+- Astro Build (https://astro.build/)
+- CSS Framework (https://tailwindcss.com/)
+
+
 
 ## Resources
 
-- [CodeSandbox — Docs](https://codesandbox.io/docs/projects)
-- [CodeSandbox — Discord](https://discord.gg/Ggarp3pX5H)
+- [CodeSandbox — Docs](https://codesandbox.io/docs/projects): IDE and development environment
+- [Supabase](https://supabase.com/): Database as service
+- [Basedash](https://app.basedash.com/home): Dashboard - visualize data from database/api & application for a quick 360°view support
+- [Upstash] (https://console.upstash.com/): Redis and Kafka queueu server
+
