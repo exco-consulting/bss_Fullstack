@@ -9,9 +9,20 @@ const supabaseUrl = "https://ahiduwxurmdqktmatgos.supabase.co";
 const supabaseKey = import.meta.env.SUPABASE_KEY;
 const supabase = createClient(supabaseUrl, supabaseKey);
 
-let { data: individual, error } = await supabase.from("Individual").select("*");
+let { data: fullIndividual, error } = await supabase.from("Individual").select(`
+		*,
+		LanguageAbility(*),
+		Characteristic(*),
+		ExternalReference(*),
+		Disability(*),
+		IndividualIdentification(*),
+		OtherNameIndividual(*),
+		PartyCreditProfile(*),
+		ContactMedium(*)
+    )
+  `);
 
-console.log("All Individuals: ", individual);
+console.log("All Individuals: ", JSON.stringify(fullIndividual, null, 4));
 ---
 
 <Layout title="Welcome to Astro.">
