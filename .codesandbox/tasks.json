@@ -1,6 +1,17 @@
 {
-  "$schema": "https://codesandbox.io/schemas/tasks.json",
-  "setupTasks": ["yarn install", "yarn build"],
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "name": "yarn install",
+      "command": "yarn install"
+    },
+    {
+      "name": "yarn build",
+      "command": "yarn build"
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
   "tasks": {
     "start-backend": {
       "name": "Run Backend ExpressJs Server",
@@ -10,12 +21,19 @@
     "start-frontend": {
       "name": "Run FrontEnd Astro Server",
       "command": "cd frontend && npm install && npm run dev",
-      "runAtStart": false
+      "runAtStart": false,
+      "preview": {
+        "port": 3000
+      }
     },
     "start-apigateway": {
       "name": "Run API Gateway Server",
       "command": "cd api-gateway && cd bss-api-gateway && npm start",
       "runAtStart": false
+    },
+    "Update Frontend": {
+      "name": "cd frontend && npm install astro@latest",
+      "command": "cd frontend && npm install astro@latest"
     }
   }
 }
