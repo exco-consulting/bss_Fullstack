@@ -20,6 +20,7 @@
   "homepage": "https://github.com/codesandbox-app/static-template#readme",
   "devDependencies": {},
   "dependencies": {
-    "nodemon": "^2.0.20"
+    "nodemon": "^2.0.20",
+     "node": "20"
   }
 }
